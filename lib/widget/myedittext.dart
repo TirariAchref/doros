@@ -33,7 +33,7 @@ class MyEdittext extends StatelessWidget {
       keyboardType: keyboardType,
       controller: controller,
       textInputAction: textInputAction,
-      cursorColor: white,
+      cursorColor: primarylight,
       style: GoogleFonts.montserrat(
           fontSize: size,
           fontStyle: FontStyle.normal,
@@ -41,7 +41,7 @@ class MyEdittext extends StatelessWidget {
           fontWeight: FontWeight.w500),
       decoration: InputDecoration(
         focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(color: white),
+          borderSide: BorderSide(color: primarylight),
         ),
         enabledBorder:
             const UnderlineInputBorder(borderSide: BorderSide(color: black)),
@@ -50,6 +50,7 @@ class MyEdittext extends StatelessWidget {
           height: 5,
           alignment: Alignment.center,
           child: MyImage(
+            color: primarylight,
             height: 20,
             imagePath: "ic_email.png",
             width: 20,

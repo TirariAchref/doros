@@ -2,7 +2,7 @@ import 'package:doros/pages/aboutus.dart';
 import 'package:doros/pages/download.dart';
 import 'package:doros/pages/editprofile.dart';
 import 'package:doros/pages/favourite.dart';
-import 'package:doros/pages/login.dart';
+import 'package:doros/pages/authnetification/login.dart';
 import 'package:doros/pages/privacypolicy.dart';
 import 'package:doros/utils/color.dart';
 import 'package:doros/utils/utils.dart';

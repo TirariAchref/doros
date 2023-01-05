@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:country_codes/country_codes.dart';
 import 'package:doros/pages/bottombar.dart';
-import 'package:doros/pages/register.dart';
+import 'package:doros/pages/authnetification/register.dart';
 import 'package:doros/utils/color.dart';
 import 'package:doros/utils/utils.dart';
 import 'package:doros/widget/myimage.dart';

@@ -1,20 +1,20 @@
 import 'package:doros/pages/bottombar.dart';
 import 'package:doros/pages/intro.dart';
-import 'package:doros/pages/login.dart';
+import 'package:doros/pages/authnetification/login.dart';
 import 'package:doros/utils/color.dart';
 import 'package:doros/widget/mysvg.dart';
 import 'package:doros/widget/mytext.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class Splash extends StatefulWidget {
-  const Splash({Key? key}) : super(key: key);
+class Splashscreen extends StatefulWidget {
+  const Splashscreen({Key? key}) : super(key: key);
 
   @override
-  State<Splash> createState() => SplashState();
+  State<Splashscreen> createState() => SplashscreenState();
 }
 
-class SplashState extends State<Splash> {
+class SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
     checkFirstSeen();
@@ -38,15 +38,17 @@ class SplashState extends State<Splash> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  MySvg(
-                    width: MediaQuery.of(context).size.width,
-                    height: 350,
-                    imagePath: "ic_splash.svg",
-                  ),
+                  Container(
+                      height: MediaQuery.of(context).size.height * 0.3,
+                      width: MediaQuery.of(context).size.width * 0.6,
+                      child: Image.asset(
+                          "assets/images/Logo_Plan de travail 1.png",
+                          width: 460,
+                          height: 215)),
                   const SizedBox(height: 40),
                   MyText(
-                    color: white,
-                    text: "Learning App",
+                    color: lowercolorintro,
+                    text: "Doroos App",
                     fontsize: 24,
                     maxline: 1,
                     overflow: TextOverflow.ellipsis,
